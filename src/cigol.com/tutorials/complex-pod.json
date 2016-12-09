@@ -1,0 +1,8 @@
+{
+	"name":"test",
+	"containers":[{
+		"image":"ubuntu:mysql-5.5.46",
+		"memory":1024,
+		"ports":[3306]
+	}]
+}

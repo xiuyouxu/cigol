@@ -1,0 +1,17 @@
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 100000 integers, using time: 36 ms
+
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 1000000 integers, using time: 1929 ms
+
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 1000000 integers, using time: 1946 ms
+
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 1000000 integers, using time: 1944 ms
+
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 1000000 integers, using time: 1935 ms
+
+xiuyouxu@mathbeta:~/workspace/go-tutorial$ go run quicksort.go
+sorting 10000000 integers, using time: 177832 ms
