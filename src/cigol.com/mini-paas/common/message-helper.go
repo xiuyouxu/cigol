@@ -19,7 +19,7 @@ func Wrap(kvs ...interface{}) map[string]interface{} {
 }
 
 func WrapMessage(kvs ...interface{}) string {
-	// be careful to pass exploded slice to the Wrap
+	// be careful to pass exploded slice to func Wrap
 	ret := Wrap(kvs...)
 	if ret != nil {
 		b, err := json.Marshal(ret)

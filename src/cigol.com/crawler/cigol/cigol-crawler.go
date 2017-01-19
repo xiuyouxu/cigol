@@ -7,12 +7,13 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"structs"
 	"time"
 	"unicode"
-	"utils"
 
-	"github.com/calbucci/htmlparser"
+	"cigol.com/crawler/structs"
+	"cigol.com/crawler/utils"
+
+	htmlparser "github.com/calbucci/go-htmlparser"
 	"golang.org/x/text/encoding"
 	"golang.org/x/text/encoding/simplifiedchinese"
 )

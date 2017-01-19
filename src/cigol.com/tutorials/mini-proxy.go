@@ -47,7 +47,7 @@ func doProxy(in net.Conn, addr string) {
 		go doTransfer(out, in, waiter)
 		<-waiter
 		<-waiter
-		fmt.Println("Finish proxying for ", in.RemoteAddr(), "to", out.RemoteAddr())
+		fmt.Println("Finish proxying for", in.RemoteAddr(), "to", out.RemoteAddr())
 	}
 }
 
