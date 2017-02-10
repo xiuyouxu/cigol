@@ -1,18 +1,20 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 	"os"
 )
+
 type Response1 struct {
 	Page   int
 	Fruits []string
 }
 type Response2 struct {
-	Page   int	  `json:"page"`
+	Page   int      `json:"page"`
 	Fruits []string `json:"fruits"`
 }
+
 func main() {
 	bolB, _ := json.Marshal(true)
 	fmt.Println(string(bolB))
@@ -23,7 +25,7 @@ func main() {
 	strB, _ := json.Marshal("gopher")
 	fmt.Println(string(strB))
 
-	 slcD := []string{"apple", "peach", "pear"}
+	slcD := []string{"apple", "peach", "pear"}
 	slcB, _ := json.Marshal(slcD)
 	fmt.Println(string(slcB))
 	mapD := map[string]int{"apple": 5, "lettuce": 7}
@@ -66,6 +68,16 @@ func main() {
 	fmt.Println(res.Fruits[0])
 
 	enc := json.NewEncoder(os.Stdout)
-	d := map[string]int {"apple": 5, "lettuce": 7}
+	d := map[string]int{"apple": 5, "lettuce": 7}
 	enc.Encode(d)
+
+	var responses []Response2 = make([]Response2, 3)
+	for i := 0; i < 3; i++ {
+		responses[i] = Response2{
+			Page:   i,
+			Fruits: []string{"apple", "peach", "pear"}}
+	}
+
+	b, _ := json.Marshal(responses)
+	fmt.Println("responses", string(b))
 }

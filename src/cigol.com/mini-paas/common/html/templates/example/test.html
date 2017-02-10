@@ -1,0 +1,12 @@
+<div id="test">
+    <ul>
+	    <li ng-repeat="x in data" id="{{x.id}}">
+	    	I am {{x.name}}, {{x.gender}}, I said: {{x.comment}}.
+	    </li>
+    </ul>
+    <ul>
+	    <li ng-repeat="x in hosts">
+	    	<p>Host {{x.name}}, ip {{x.ip}}, ssh port: {{x.sshPort}}, user name: {{x.userName}}, password: {{x.passwd}}</p>
+	    </li>
+    </ul>
+</div>
