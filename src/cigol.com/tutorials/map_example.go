@@ -7,6 +7,8 @@ func main() {
 	fmt.Printf("m[1]=%d\n", m["1"])
 	fmt.Printf("m[pi]=%d\n", m["pi"])
 
+	m["e"] = 2
+
 	fmt.Printf("m[notexist]=%d\n", m["notexist"])
 	_, ok := m["notexist"]
 	fmt.Println("key 'notexist' exists? ", ok)
